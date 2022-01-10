@@ -6,18 +6,17 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     private CharacterController characterController;
-    private PlayerInput playerInput;
     private Vector3 vector3Move;
     private Vector2 moveValue = new Vector2(0, 0);
     private bool isSprinting = false;
     private float speed = 5f;
-    private float maxSpeed = 10f;
-    private float minSpeed = 5f;
+    public float maxSpeed;
+    public float minSpeed;
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        playerInput = GetComponent<PlayerInput>();
+        
     }
 
     // Update is called once per frame
@@ -42,7 +41,7 @@ public class PlayerMove : MonoBehaviour
                 speed = minSpeed;
             }
         }
-        print(speed);
+        //print(speed);
     }
 
     public void move(InputAction.CallbackContext context)

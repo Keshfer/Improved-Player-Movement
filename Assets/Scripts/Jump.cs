@@ -8,7 +8,6 @@ public class Jump : MonoBehaviour
     //ALWAYS HAVE THE GROUNDCHECKER AS THE FIRST CHILD ************************************
     private Vector3 jumpHeight = new Vector3(0,0,0);
     private CharacterController characterController;
-    public Vector3 gravity;
     private GameObject groundChecker;
     private bool isGround;
     public LayerMask ground;
