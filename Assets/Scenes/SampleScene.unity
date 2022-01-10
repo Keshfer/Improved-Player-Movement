@@ -794,6 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45dae3164fee964397c5243fd180887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraObject: Player Cam
   sensitivity: 3.5
 --- !u!4 &1552479099
 Transform:
@@ -824,6 +825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005146c722742a942ae07b6ad2c93e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 15
+  minSpeed: 5
 --- !u!114 &1552479101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,7 +968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977e9a32b79347843b1dfd3adeaafbf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: {x: 0, y: 0, z: 0}
   ground:
     serializedVersion: 2
     m_Bits: 256
